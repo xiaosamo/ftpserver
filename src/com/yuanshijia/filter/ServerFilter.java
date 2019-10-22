@@ -1,6 +1,6 @@
 package com.yuanshijia.filter;
 
-import com.yuanshijia.Constants;
+import com.yuanshijia.util.Constants;
 import com.yuanshijia.util.RSAUtils;
 import com.yuanshijia.util.StringUtils;
 
@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * @author yuan
  * @date 2019/10/21
- * @description
+ * @description 全局请求过滤器
  */
 public class ServerFilter implements Filter {
 

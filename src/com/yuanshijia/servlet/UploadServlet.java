@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
-import static com.yuanshijia.Constants.SAVE_PATH;
+import static com.yuanshijia.util.Constants.SAVE_PATH;
 
 /**
  * @author yuan
@@ -28,6 +28,8 @@ public class UploadServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
         try {
             String contentType = request.getContentType();
 
@@ -83,10 +85,12 @@ public class UploadServlet extends HttpServlet {
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
         String dir = format.format(new Date());
         File folder = new File(SAVE_PATH + dir);
+
         if (!folder.exists() && !folder.isDirectory()) {
             // 如果文件夹不存在，创建文件夹
             folder.mkdirs();
         }
+
         File destFile = new File(folder.getAbsolutePath() + "\\" + uuidName + suffix);
         InputStream is = part.getInputStream();
         OutputStream os = new FileOutputStream(destFile);

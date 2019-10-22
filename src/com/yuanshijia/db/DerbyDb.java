@@ -6,8 +6,11 @@ import java.sql.*;
 import java.util.*;
 
 public class DerbyDb {
-	private static String driver = "org.apache.derby.jdbc.ClientDriver";
-	private static String url = "jdbc:derby://localhost:1527/ftpserver";
+//	private static String driver = "org.apache.derby.jdbc.ClientDriver";
+//	private static String url = "jdbc:derby://localhost:1527/ftpserver";
+
+		private static String driver = "org.apache.derby.jdbc.EmbeddedDriver";
+	private static String url = "jdbc:derby:ftpserver;create=true";
 
 	private DerbyDb(){
 	}
@@ -39,8 +42,9 @@ public class DerbyDb {
 					")";
 
 			statement.executeUpdate(sql);
+			System.err.println("创建tb_file表");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.err.println("tb_file表已经存在，不需创建");
 		}
 	}
 
@@ -153,4 +157,7 @@ public class DerbyDb {
 //		deleteById("4575d029-e9e2-44a7-8022-64c508550e59");
 //		System.out.println(queryById("4575d029-e9e2-44a7-8022-64c508550e59"));
 	}
+
+
+
 }

@@ -1,4 +1,4 @@
-package com.yuanshijia;
+package com.yuanshijia.util;
 
 /**
  * @author yuan
@@ -6,7 +6,7 @@ package com.yuanshijia;
  * @description 全局常量类
  */
 public class Constants {
-    public static final String SAVE_PATH = "D:\\ftpfile\\";
+    public static final String SAVE_PATH = System.getProperty("user.dir") + "\\ftpfile\\";
 
     /**
      * 公钥
