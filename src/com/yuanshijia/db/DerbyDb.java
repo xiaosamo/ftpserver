@@ -9,8 +9,10 @@ public class DerbyDb {
 //	private static String driver = "org.apache.derby.jdbc.ClientDriver";
 //	private static String url = "jdbc:derby://localhost:1527/ftpserver";
 
-		private static String driver = "org.apache.derby.jdbc.EmbeddedDriver";
+	// 内嵌
+	private static String driver = "org.apache.derby.jdbc.EmbeddedDriver";
 	private static String url = "jdbc:derby:ftpserver;create=true";
+
 
 	private DerbyDb(){
 	}

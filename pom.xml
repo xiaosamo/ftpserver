@@ -61,13 +61,6 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- derbyclient -->
-    <dependency>
-      <groupId>org.apache.derby</groupId>
-      <artifactId>derbyclient</artifactId>
-      <version>10.14.2.0</version>
-    </dependency>
-
 
     <!-- fastjson -->
     <dependency>
