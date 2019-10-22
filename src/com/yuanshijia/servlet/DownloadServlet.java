@@ -14,7 +14,7 @@ import java.io.*;
 /**
  * @author yuan
  * @date 2019/10/21
- * @description
+ * @description 下载接口 get
  */
 @WebServlet("/download")
 public class DownloadServlet extends HttpServlet {

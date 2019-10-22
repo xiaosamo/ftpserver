@@ -20,7 +20,7 @@ import static com.yuanshijia.util.Constants.SAVE_PATH;
 /**
  * @author yuan
  * @date 2019/10/18
- * @description
+ * @description post上传接口
  */
 @MultipartConfig
 @WebServlet("/upload")

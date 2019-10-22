@@ -14,7 +14,7 @@ import java.io.*;
 /**
  * @author yuan
  * @date 2019/10/21
- * @description
+ * @description 根据uuid查询，返回文件信息的json数据
  */
 @WebServlet("/get")
 public class GetServlet extends HttpServlet {
