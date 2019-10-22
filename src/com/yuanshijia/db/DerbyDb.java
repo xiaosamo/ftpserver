@@ -147,9 +147,7 @@ public class DerbyDb {
 
 	public static void main(String[] args) {
 //		queryAll();
-
 //		create();
-
 //		add(new FileInfo(UUID.randomUUID().toString(), 1024, "image", "ysj.txt", new java.util.Date(), "d:"));
 
 //		deleteAll();
@@ -159,7 +157,5 @@ public class DerbyDb {
 //		deleteById("4575d029-e9e2-44a7-8022-64c508550e59");
 //		System.out.println(queryById("4575d029-e9e2-44a7-8022-64c508550e59"));
 	}
-
-
 
 }
